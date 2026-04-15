@@ -1,0 +1,73 @@
+.tex-tips {
+  border-top: 1px solid var(--border);
+}
+
+.tex-tips-toggle {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-raised);
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.tex-tips-toggle:hover {
+  background: var(--bg-hover);
+}
+
+.tex-tips-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.tex-tip {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.tex-tip:last-child {
+  border-bottom: none;
+}
+
+.tex-tip-title {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.tex-tip-code {
+  font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+  font-size: 0.72rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-input);
+  border-radius: 3px;
+  padding: 0.35rem 0.5rem;
+  white-space: pre;
+  overflow-x: auto;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.tex-tip-insert {
+  align-self: flex-end;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  border: 1px solid var(--border-input);
+  border-radius: 3px;
+  background: var(--bg-surface);
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.tex-tip-insert:hover {
+  background: var(--bg-hover-alt);
+}

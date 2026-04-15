@@ -1,0 +1,29 @@
+.svg-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: var(--bg-surface);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  overflow: auto;
+}
+
+.svg-preview svg {
+  max-width: 100%;
+}
+
+.svg-preview--loading,
+.svg-preview--empty {
+  color: var(--text-faint);
+  font-size: 0.875rem;
+}
+
+.svg-preview--error {
+  color: var(--error-text);
+  font-family: monospace;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

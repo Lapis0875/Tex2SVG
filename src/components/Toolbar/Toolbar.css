@@ -1,0 +1,25 @@
+.toolbar {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.toolbar-btn {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-input);
+  border-radius: 4px;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.toolbar-btn:hover:not(:disabled) {
+  background: var(--bg-hover-alt);
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

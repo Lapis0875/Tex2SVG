@@ -1,0 +1,42 @@
+.supported-env {
+  padding: 0.5rem 0.75rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-raised);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.supported-env-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font-size: inherit;
+}
+
+.supported-env-toggle:hover .supported-env-label {
+  color: var(--text-primary);
+}
+
+.supported-env-label {
+  font-weight: 600;
+}
+
+.supported-env-chevron {
+  font-size: 0.65rem;
+  color: var(--text-faint);
+}
+
+.supported-env-list {
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+  list-style: disc;
+  line-height: 1.7;
+}

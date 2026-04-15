@@ -1,0 +1,106 @@
+.settings-panel {
+  border-top: 1px solid var(--border);
+}
+
+.settings-toggle {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--bg-raised);
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.settings-toggle:hover {
+  background: var(--bg-hover);
+}
+
+.settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 0.75rem;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+  color: var(--text-primary);
+}
+
+.settings-row select,
+.settings-row input[type="text"] {
+  font-size: 0.8rem;
+  border: 1px solid var(--border-input);
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.dimension-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.dimension-input-label {
+  flex-shrink: 0;
+}
+
+.dimension-input-row {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.dimension-input-row input {
+  width: 70px;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-input);
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  background: var(--bg-surface);
+  color: var(--text-primary);
+}
+
+.dimension-input-unit {
+  font-size: 0.75rem;
+  color: var(--text-unit);
+}
+
+.settings-reload-warning {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-border);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: var(--warn-text);
+}
+
+.settings-reload-btn {
+  margin-left: auto;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.72rem;
+  border: 1px solid var(--warn-btn-border);
+  border-radius: 3px;
+  background: var(--warn-btn-bg);
+  cursor: pointer;
+  color: var(--warn-text);
+  white-space: nowrap;
+}
+
+.settings-reload-btn:hover {
+  background: var(--warn-btn-hover);
+}

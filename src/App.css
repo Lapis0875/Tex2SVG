@@ -1,0 +1,215 @@
+:root {
+  --bg-base: #f8f8f8;
+  --bg-surface: #ffffff;
+  --bg-raised: #f5f5f5;
+  --bg-hover: #ececec;
+  --bg-hover-alt: #f0f0f0;
+  --bg-input: #fafafa;
+  --bg-preview: #f0f0f0;
+  --bg-log: #1e1e1e;
+
+  --border: #ddd;
+  --border-input: #ccc;
+
+  --text-primary: #111;
+  --text-secondary: #444;
+  --text-muted: #555;
+  --text-faint: #999;
+  --text-unit: #777;
+
+  --focus-ring: #4a90d9;
+
+  --log-time: #888;
+  --log-error: #ff6b6b;
+
+  --error-bg: #fff3f3;
+  --error-text: #b00;
+  --error-hover: #ffe8e8;
+
+  --warn-bg: #fff8e1;
+  --warn-border: #f0c040;
+  --warn-text: #7a5c00;
+  --warn-btn-bg: #fff3cc;
+  --warn-btn-border: #d4a000;
+  --warn-btn-hover: #ffe78a;
+}
+
+:root[data-theme="light"] {
+  --bg-base: #f8f8f8;
+  --bg-surface: #ffffff;
+  --bg-raised: #f5f5f5;
+  --bg-hover: #ececec;
+  --bg-hover-alt: #f0f0f0;
+  --bg-input: #fafafa;
+  --bg-preview: #f0f0f0;
+  --bg-log: #1e1e1e;
+
+  --border: #ddd;
+  --border-input: #ccc;
+
+  --text-primary: #111;
+  --text-secondary: #444;
+  --text-muted: #555;
+  --text-faint: #999;
+  --text-unit: #777;
+
+  --focus-ring: #4a90d9;
+
+  --log-time: #888;
+  --log-error: #ff6b6b;
+
+  --error-bg: #fff3f3;
+  --error-text: #b00;
+  --error-hover: #ffe8e8;
+
+  --warn-bg: #fff8e1;
+  --warn-border: #f0c040;
+  --warn-text: #7a5c00;
+  --warn-btn-bg: #fff3cc;
+  --warn-btn-border: #d4a000;
+  --warn-btn-hover: #ffe78a;
+}
+
+:root[data-theme="dark"] {
+  --bg-base: #1a1a1a;
+  --bg-surface: #242424;
+  --bg-raised: #2c2c2c;
+  --bg-hover: #333333;
+  --bg-hover-alt: #2e2e2e;
+  --bg-input: #1e1e1e;
+  --bg-preview: #161616;
+  --bg-log: #111111;
+
+  --border: #3a3a3a;
+  --border-input: #484848;
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #bbb;
+  --text-muted: #aaa;
+  --text-faint: #666;
+  --text-unit: #888;
+
+  --focus-ring: #5ba3e8;
+
+  --log-time: #666;
+  --log-error: #ff6b6b;
+
+  --error-bg: #2a0000;
+  --error-text: #ff6b6b;
+  --error-hover: #330000;
+
+  --warn-bg: #2a2000;
+  --warn-border: #806000;
+  --warn-text: #ffd060;
+  --warn-btn-bg: #332800;
+  --warn-btn-border: #996a00;
+  --warn-btn-hover: #443300;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --bg-base: #1a1a1a;
+    --bg-surface: #242424;
+    --bg-raised: #2c2c2c;
+    --bg-hover: #333333;
+    --bg-hover-alt: #2e2e2e;
+    --bg-input: #1e1e1e;
+    --bg-preview: #161616;
+    --bg-log: #111111;
+
+    --border: #3a3a3a;
+    --border-input: #484848;
+
+    --text-primary: #e8e8e8;
+    --text-secondary: #bbb;
+    --text-muted: #aaa;
+    --text-faint: #666;
+    --text-unit: #888;
+
+    --focus-ring: #5ba3e8;
+
+    --log-time: #666;
+    --log-error: #ff6b6b;
+
+    --error-bg: #2a0000;
+    --error-text: #ff6b6b;
+    --error-hover: #330000;
+
+    --warn-bg: #2a2000;
+    --warn-border: #806000;
+    --warn-text: #ffd060;
+    --warn-btn-bg: #332800;
+    --warn-btn-border: #996a00;
+    --warn-btn-hover: #443300;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.app-header-logo {
+  height: 1.8rem;
+  width: auto;
+}
+
+.app-header h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  flex: 1;
+  overflow: hidden;
+}
+
+.app-sidebar {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  background: var(--bg-surface);
+}
+
+.app-preview {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--bg-preview);
+}
+
+.app-preview .svg-preview {
+  flex: 1;
+  overflow: auto;
+  margin: 1.5rem;
+  margin-bottom: 0;
+}
