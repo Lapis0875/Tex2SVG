@@ -46,6 +46,8 @@ Examples:
 E = mc^2
 ```
 
+![preview image 1](previews/image1.png)
+
 ```tex
 \begin{align}
   \nabla \cdot \mathbf{E} &= \frac{\rho}{\varepsilon_0} \\
@@ -53,11 +55,15 @@ E = mc^2
 \end{align}
 ```
 
+![preview image 2](previews/image2.png)
+
 ```tex
 \begin{equation}
   \int_0^\infty e^{-x^2}\,dx = \frac{\sqrt{\pi}}{2}
 \end{equation}
 ```
+
+![preview image 3](previews/image3.png)
 
 ### Settings
 
