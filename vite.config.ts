@@ -1,15 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [react()],
   base: './',
   resolve: {
     alias: {
-      '@components': resolve(__dirname, 'src/components'),
-      '@features': resolve(__dirname, 'src/features'),
-      '@lib': resolve(__dirname, 'src/lib'),
+      '@components': new URL('./src/components', import.meta.url).pathname,
+      '@features': new URL('./src/features', import.meta.url).pathname,
+      '@lib': new URL('./src/lib', import.meta.url).pathname,
     },
   },
   optimizeDeps: {
